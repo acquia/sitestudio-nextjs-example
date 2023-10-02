@@ -1,8 +1,7 @@
 import {getFieldValue} from "./RenderComponent";
 export default function Ingredients( props ) {
-    console.log('Ingredients props', props)
     const {field_data} = props;
-    const ingredients = field_data[0].data.children
+    const ingredients = field_data[0].data.children;
 
     return <div>
         <h4>Ingredients:</h4>

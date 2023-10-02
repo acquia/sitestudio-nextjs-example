@@ -50,3 +50,11 @@
 .lightText {
   color: #666;
 }
+
+.errorText {
+  background: red;
+  color: white;
+  font-weight: bold;
+  padding: 0.2em 1em;
+  border-radius: 0.2em;
+}

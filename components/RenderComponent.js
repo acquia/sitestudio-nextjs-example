@@ -2,6 +2,7 @@ import Header from "./Header";
 import Ingredients from "./Ingredients";
 import Method from "./Method";
 import Banner from "./Banner";
+import utilStyles from '../styles/utils.module.css';
 
 export function getFieldValue(field_data, machine_name) {
     const field = field_data.find(field=>field.machine_name === machine_name);
@@ -23,6 +24,6 @@ export default function RenderComponent({ component }) {
             return <Banner {...component.data} />;
         // Add more cases for other component types as needed
         default:
-            return null;
+            return <div><p className={utilStyles.errorText}>Encountered an unknown component type { component.data.uid }</p></div>;
     }
 };
